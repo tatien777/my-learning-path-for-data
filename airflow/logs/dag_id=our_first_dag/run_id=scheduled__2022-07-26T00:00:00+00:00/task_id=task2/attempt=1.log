@@ -1,0 +1,1 @@
+[2022-07-27 01:51:54,722] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag.task2 scheduled__2022-07-26T00:00:00+00:00 [queued]>

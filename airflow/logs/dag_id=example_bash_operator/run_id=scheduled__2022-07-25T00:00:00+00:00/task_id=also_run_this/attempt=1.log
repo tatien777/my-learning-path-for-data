@@ -1,0 +1,15 @@
+[2022-07-26 10:04:32,900] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: example_bash_operator.also_run_this scheduled__2022-07-25T00:00:00+00:00 [queued]>
+[2022-07-26 10:04:32,962] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: example_bash_operator.also_run_this scheduled__2022-07-25T00:00:00+00:00 [queued]>
+[2022-07-26 10:04:32,968] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-26 10:04:32,972] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-07-26 10:04:32,974] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-26 10:04:36,637] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): also_run_this> on 2022-07-25 00:00:00+00:00
+[2022-07-26 10:04:38,630] {standard_task_runner.py:52} INFO - Started process 1621 to run task
+[2022-07-26 10:04:38,715] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_bash_operator', 'also_run_this', 'scheduled__2022-07-25T00:00:00+00:00', '--job-id', '69', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_bash_operator.py', '--cfg-path', '/tmp/tmpe756sdkc', '--error-file', '/tmp/tmpzrenm24j']
+[2022-07-26 10:04:38,726] {standard_task_runner.py:80} INFO - Job 69: Subtask also_run_this
+[2022-07-26 10:06:16,462] {local_task_job.py:221} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2022-07-26 10:06:19,479] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 1621. PIDs of all processes in the group: [1621]
+[2022-07-26 10:06:19,829] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 1621
+[2022-07-26 10:06:26,216] {process_utils.py:75} INFO - Process psutil.Process(pid=1621, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='10:04:38') (1621) terminated with exit code Negsignal.SIGTERM
